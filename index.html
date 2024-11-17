@@ -6,46 +6,127 @@
     <title>The Flowerbed Anishka</title>
     <style>
         body {
-            background-image: url('flowerbed.png');
-            background-size: cover; /* Corrected to cover the screen size */
-            background-repeat: no-repeat; /* Ensure the image doesn't repeat */
+            background-image: url('flowerbed.png'); /* Image applied to the entire page */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
             font-family: Arial, sans-serif;
             font-size: 16px;
-            text-align: justify;
             margin: 0;
             padding: 0;
         }
 
-        h1 {
-            font-size: 32px;
-            color: black;
+        /* General styles */
+        h1, h2 {
             text-align: center;
+            color: black;
             text-transform: uppercase;
             text-decoration: underline;
-            margin-top: 50px;
         }
 
         p {
-            font-size: 20px;
+            font-size: 18px;
             color: white;
-            text-align: left;
-            padding: 0 20px;
+            line-height: 1.6;
+            text-align: justify;
+            margin: 0 20px;
         }
 
-        b {
-            font-weight: bold;
+        section {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background to enhance text visibility */
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
         }
 
-        u {
-            text-decoration: underline;
+        .section-heading {
+            font-size: 28px;
+            margin-bottom: 20px;
         }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #f0ad4e;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .button {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+        }
+
     </style>
 </head>
 <body>
-    <h1>The Flowerbed</h1>
-    <p>
-        This is the book which won the Jury Choice Award 2024!<br>
-        This is the emotional story on plant life – if they could speak, <b>love</b> and <u>cherish</u> each other.
-    </p>
+
+    <!-- Main Heading -->
+    <header>
+        <h1>The Flowerbed</h1>
+        <p>This is a story about the magic of plants and nature. Dive into the emotional world of life if plants could speak!</p>
+    </header>
+
+    <!-- Create New Blog Section -->
+    <section id="create-blog">
+        <h2 class="section-heading">Create a New Blog</h2>
+        <p>
+            Want to share your thoughts and experiences? Write a new blog post here! This is the perfect place to create and publish your own story about the wonderful world of flowers, nature, and life.
+        </p>
+        <a href="#" class="button">Create Blog</a>
+    </section>
+
+    <!-- Featured Blog Post Section -->
+    <section id="featured-post">
+        <h2 class="section-heading">Featured Post</h2>
+        <p>
+            This is the book which won the Jury Choice Award 2024! An emotional journey into the world of plant life. If plants could speak, they would <b>love</b> and <u>cherish</u> each other, forming a community of life.
+        </p>
+    </section>
+
+    <!-- Gallery Section with Images -->
+    <section id="gallery">
+        <h2 class="section-heading">Gallery</h2>
+        <p>Enjoy some beautiful images of flowers and nature from around the world.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+            <img src="flower1.jpg" alt="Flower 1" style="width: 30%; border-radius: 10px;">
+            <img src="flower2.jpg" alt="Flower 2" style="width: 30%; border-radius: 10px;">
+            <img src="flower3.jpg" alt="Flower 3" style="width: 30%; border-radius: 10px;">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-heading">About The Author</h2>
+        <p>
+            Anishka is a passionate gardener and writer, exploring the magical world of plants and their hidden secrets. With a deep love for nature, she tells stories that connect us with the beauty of life on Earth.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-heading">Contact</h2>
+        <p>
+            Feel free to reach out if you have any questions or would like to collaborate on writing projects!
+        </p>
+        <a href="mailto:anishka@example.com" class="button">Contact Me</a>
+    </section>
+
 </body>
 </html>
