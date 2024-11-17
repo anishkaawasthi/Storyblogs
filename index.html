@@ -89,8 +89,23 @@
         <p>
             Want to share your thoughts and experiences? Write a new blog post here! This is the perfect place to create and publish your own story about the wonderful world of flowers, nature, and life.
         </p>
-        <a href="#" class="button">Create Blog</a>
+        
+        <!-- Blog Submission Form -->
+        <form action="submit_blog.php" method="POST">
+            <label for="blog-title">Blog Title:</label><br>
+            <input type="text" id="blog-title" name="blog-title" required placeholder="Enter Blog Title"><br><br>
+    
+            <label for="blog-content">Blog Content:</label><br>
+            <textarea id="blog-content" name="blog-content" rows="6" cols="50" required placeholder="Write your blog content here..."></textarea><br><br>
+    
+            <label for="author-name">Your Name:</label><br>
+            <input type="text" id="author-name" name="author-name" placeholder="Enter your name"><br><br>
+    
+            <input type="submit" value="Submit Blog" class="button">
+        </form>
     </section>
+
+
 
     <!-- Featured Blog Post Section -->
     <section id="featured-post">
